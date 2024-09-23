@@ -1,0 +1,29 @@
+.buttonComponent {
+  border: 1px solid red;
+  transition: transform 0.3s ease;
+}
+
+.buttonComponent:hover {
+  color: gray;
+  cursor: pointer;
+  animation: shake 0.5s cubic-bezier(.36,.66,.04,.98) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(10px);
+  }
+  20%,
+  80% {
+    transform: translateX(-10px);
+  }
+  30%,
+  70% {
+    transform: translateX(5px);
+  }
+  40%,
+  60% {
+    transform: translateX(-5px);
+  }
+}
